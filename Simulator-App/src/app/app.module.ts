@@ -4,10 +4,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EventsMessagesModule } from './components/events-messages/events-messages.module';
+import { EventTypeMsgDialogComponent } from './components/events-messages/event-type-msg/event-type-msg.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -15,6 +16,7 @@ import { EventsMessagesModule } from './components/events-messages/events-messag
     EventsMessagesModule,
     BrowserAnimationsModule
   ],
+  entryComponents: [EventTypeMsgDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
