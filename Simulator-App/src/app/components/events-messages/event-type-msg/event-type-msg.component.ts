@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+/* import { Component, Inject } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 export interface DialogData {
@@ -21,7 +21,7 @@ export class EventTypeMsgComponent  {
 
   openDialog(): void {
 // tslint:disable-next-line: no-use-before-declare
-    const dialogRef = this.dialog.open(EventTypeMsgDialogComponent, {
+    const dialogRef = this.dialog.open(, {
       width: '500px',
       data: {name: this.name, animal: this.animal}
     });
@@ -34,26 +34,10 @@ export class EventTypeMsgComponent  {
 
 }
 
-@Component({
-// tslint:disable-next-line: component-selector
-  selector: 'event-type-msg-dialog',
-  templateUrl: 'event-type-msg-dialog.Component.html',
-  styleUrls: ['./event-type-msg-dialog.component.css']
-  })
-
-  export class EventTypeMsgDialogComponent {
-    constructor(
-      public dialogRef: MatDialogRef<EventTypeMsgDialogComponent>,
-      @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-
-    onNoClick(): void {
-      this.dialogRef.close();
-    }
-
-  }
 
 
 
 
 
 
+ */
