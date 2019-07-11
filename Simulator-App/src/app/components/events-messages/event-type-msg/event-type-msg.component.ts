@@ -1,5 +1,6 @@
-import { Component, Inject } from '@angular/core';
-import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AaMsgDialogueComponent } from '../mvt-dialog/aa-msg-dialogue/aa-msg-dialogue.component';
 
 export interface DialogData {
   animal: string;
@@ -21,7 +22,7 @@ export class EventTypeMsgComponent  {
 
   openDialog(): void {
 // tslint:disable-next-line: no-use-before-declare
-    const dialogRef = this.dialog.open(EventTypeMsgDialogComponent, {
+    const dialogRef = this.dialog.open(AaMsgDialogueComponent, {
       width: '500px',
       data: {name: this.name, animal: this.animal}
     });
@@ -34,7 +35,7 @@ export class EventTypeMsgComponent  {
 
 }
 
-@Component({
+/* @Component({
 // tslint:disable-next-line: component-selector
   selector: 'event-type-msg-dialog',
   templateUrl: 'event-type-msg-dialog.Component.html',
@@ -52,7 +53,7 @@ export class EventTypeMsgComponent  {
 
   }
 
-
+ */
 
 
 
