@@ -5,9 +5,45 @@
     <mat-card-subtitle>Astrid Event Simulator</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <p>
-      Ici on va recevoir toutes informations du vol recherché.
-    </p>
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="dep_esc">
+          <th mat-header-cell *matHeaderCellDef> Dep. terminal </th>
+          <td mat-cell *matCellDef="let element"> {{element.dep_esc}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dep_term">
+          <th mat-header-cell *matHeaderCellDef> Dep. time </th>
+          <td mat-cell *matCellDef="let element"> {{element.dep_term}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dep_time">
+          <th mat-header-cell *matHeaderCellDef> Dep. time </th>
+          <td mat-cell *matCellDef="let element"> {{element.dep_time}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="arr_esc">
+          <th mat-header-cell *matHeaderCellDef> Arr. terminal </th>
+          <td mat-cell *matCellDef="let element"> {{element.arr_esc}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="arr_term">
+          <th mat-header-cell *matHeaderCellDef> Arr. terminal </th>
+          <td mat-cell *matCellDef="let element"> {{element.arr_term}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="arr_time">
+          <th mat-header-cell *matHeaderCellDef> Arr. time </th>
+          <td mat-cell *matCellDef="let element"> {{element.arr_time}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[3, 6, 9]" showFirstLastButtons></mat-paginator>
+    </div>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>Close</button>
