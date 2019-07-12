@@ -1,0 +1,14 @@
+.example-container {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.mat-form-field {
+  margin: 2%;
+}
+
+.mat-raised-button {
+  font-weight: bold;
+  color:white;
+  background-color: #051039;
+}

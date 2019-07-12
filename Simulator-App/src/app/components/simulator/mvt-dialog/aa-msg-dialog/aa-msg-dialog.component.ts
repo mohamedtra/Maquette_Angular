@@ -13,6 +13,7 @@ export class AaMsgDialogComponent{
     public dialogRef: MatDialogRef<AaMsgDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
 
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
   }
 
