@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { FlightInfoComponent } from './flight-info/flight-info.component';
 import { MaterialModule } from 'src/app/material.module';
 
-
-
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [FlightInfoComponent],
   imports: [
     CommonModule,
     MaterialModule
   ],
-
-  exports: [
-    HeaderComponent
-  ]
+  exports: [FlightInfoComponent]
 })
-export class HeaderModule { }
+export class InfoFlightModule { }
