@@ -6,11 +6,18 @@ import { HeaderComponent } from './header/header.component';
 import { AaMsgDialogComponent } from './mvt-dialog/aa-msg-dialog/aa-msg-dialog.component';
 import { MaterialModule } from 'src/app/material.module';
 import { EventsTypeMsgComponent } from './events-type-msg/events-type-msg.component';
+import { FlightInfoComponent } from './flight-info/flight-info.component';
 
 
 
 @NgModule({
-  declarations: [SearchFlightComponent,  EventsMsgComponent, HeaderComponent, AaMsgDialogComponent, EventsTypeMsgComponent],
+  declarations: [
+    SearchFlightComponent,
+    EventsMsgComponent,
+    HeaderComponent,
+    AaMsgDialogComponent,
+    EventsTypeMsgComponent,
+    FlightInfoComponent],
   imports: [
     CommonModule,
     MaterialModule
