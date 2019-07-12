@@ -1,0 +1,9 @@
+.example-card {
+  width: 100%;
+
+}
+
+.example-header-image {
+  background-image: url('https://i.pinimg.com/originals/1b/63/98/1b6398ec7c18f9e3adf043304e875246.png');
+  background-size: cover;
+}

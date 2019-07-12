@@ -22,6 +22,11 @@ import { FlightInfoComponent } from './flight-info/flight-info.component';
     CommonModule,
     MaterialModule
   ],
-  exports: [SearchFlightComponent,  EventsMsgComponent, HeaderComponent, AaMsgDialogComponent, EventsTypeMsgComponent]
+  exports: [SearchFlightComponent,
+    EventsMsgComponent,
+    HeaderComponent,
+    AaMsgDialogComponent,
+    FlightInfoComponent,
+    EventsTypeMsgComponent]
 })
 export class SimulatorModule { }
