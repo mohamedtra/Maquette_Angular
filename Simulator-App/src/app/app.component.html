@@ -1,6 +1,11 @@
 
 <app-header></app-header>
-<app-search-flight-info></app-search-flight-info>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile><app-search-flight-info></app-search-flight-info></mat-grid-tile>
+  <mat-grid-tile><app-flight-info></app-flight-info></mat-grid-tile>
+</mat-grid-list>
+
 <app-events-msg></app-events-msg>
 <router-outlet></router-outlet>
 

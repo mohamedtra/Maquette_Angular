@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AaMsgDialogComponent } from './components/simulator/mvt-dialog/aa-msg-dialog/aa-msg-dialog.component';
 import { SimulatorModule } from './components/simulator/simulator.module';
+import { MaterialModule } from './material.module';
 
 
 
@@ -17,7 +18,8 @@ import { SimulatorModule } from './components/simulator/simulator.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SimulatorModule
+    SimulatorModule,
+    MaterialModule
   ],
   entryComponents: [AaMsgDialogComponent],
   providers: [],
