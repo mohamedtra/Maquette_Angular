@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FlightInfoComponent } from './flight-info.component';
+import { SearchFlightComponent } from './search-flight.component';
 
 describe('FlightInfoComponent', () => {
-  let component: FlightInfoComponent;
-  let fixture: ComponentFixture<FlightInfoComponent>;
+  let component: SearchFlightComponent;
+  let fixture: ComponentFixture<SearchFlightComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FlightInfoComponent ]
+      declarations: [ SearchFlightComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FlightInfoComponent);
+    fixture = TestBed.createComponent(SearchFlightComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
