@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AaMsgDialogComponent } from '../mvt-dialog/aa-msg-dialog/aa-msg-dialog.component';
 
@@ -11,7 +11,7 @@ export interface DialogData {
   templateUrl: './events-type-msg.component.html',
   styleUrls: ['./events-type-msg.component.css']
 })
-export class EventsTypeMsgComponent  {
+export class EventsTypeMsgComponent   {
   animal: string;
   name: string;
   constructor(public dialog: MatDialog) {}
@@ -29,6 +29,7 @@ export class EventsTypeMsgComponent  {
     });
   }
 
+  // tslint:disable-next-line: use-lifecycle-interface
   ngOnInit() {
   }
 
