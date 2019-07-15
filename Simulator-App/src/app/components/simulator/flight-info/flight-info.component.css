@@ -11,3 +11,8 @@
 table {
   width: 100%;
 }
+
+mat-card-title {
+  font-size: 5px;
+}
+
