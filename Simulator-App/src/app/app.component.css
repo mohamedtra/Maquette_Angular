@@ -1,19 +1,19 @@
 
 mat-grid-tile {
   background: white;
-}
 
-mat-grid-list {
-  width: 100%;
 }
 
 app-search-flight-info {
   width: 90%;
   margin-left: 10%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 app-flight-info {
   width: 90%;
   margin-right: 5%;
-  height: 100%;
+
 }
+

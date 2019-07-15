@@ -1,17 +1,25 @@
 <mat-card>
 
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Search flight</mat-card-title>
+        <br>
+    </mat-card-header>
+    <br>
     <div class="example-container">
         <mat-form-field>
-            <input matInput placeholder="Company">
+           <input matInput placeholder="Company">
         </mat-form-field>
 
-        <mat-form-field>
-           <input matInput placeholder="Flight number">
-        </mat-form-field>
+        <div class="enligne">
+            <mat-form-field>
+                <input matInput placeholder="Flight number">
+             </mat-form-field>
 
-        <mat-form-field>
-          <input matInput placeholder="Operational suffix">
-        </mat-form-field>
+             <mat-form-field class="sp">
+                <input matInput placeholder="Operational suffix">
+             </mat-form-field>
+        </div>
 
         <mat-form-field>
           <input matInput [matDatepicker]="picker" placeholder="Flight date">
@@ -22,7 +30,6 @@
         <button mat-raised-button>Check Flight</button>
 
       </div>
-  <br>
 
 </mat-card>
 

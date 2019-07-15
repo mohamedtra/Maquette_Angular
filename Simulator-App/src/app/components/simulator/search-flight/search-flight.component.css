@@ -1,8 +1,11 @@
 .example-container {
   width: 100%;
-  height: 70%;
   display: flex;
   flex-direction: column;
+}
+
+.enligne {
+  display: inline;
 }
 
 
@@ -10,4 +13,13 @@
   font-weight: bold;
   color:white;
   background-color: #051039;
+}
+
+.example-header-image {
+  background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/84/4c/dd/844cdda8-c8b1-e31e-6dba-da30e1c47e77/source/256x256bb.jpg');
+  background-size: cover;
+}
+
+.sp {
+  margin-left: 8%;
 }

@@ -5,7 +5,7 @@
 }
 
 .example-header-image {
-  background-image: url('https://i.pinimg.com/originals/1b/63/98/1b6398ec7c18f9e3adf043304e875246.png');
+  background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/84/4c/dd/844cdda8-c8b1-e31e-6dba-da30e1c47e77/source/256x256bb.jpg');
   background-size: cover;
 }
 
@@ -18,8 +18,12 @@ mat-card-title {
 }
 
 .scrollable {
-  height: 100%;
+  height: 220px;
   overflow: scroll;
   width: 100%;
+}
+
+mat-card-subtitle {
+  color: #ed0000;
 }
 
