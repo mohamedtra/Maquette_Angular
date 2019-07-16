@@ -1,3 +1,4 @@
+
 export class FlightLeg {
   depStation: string;
   arrStation: string;
