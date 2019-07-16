@@ -2,16 +2,15 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Flight } from 'src/app/models/flight';
 
-
 @Component({
-  selector: 'app-aa-msg-dialog',
-  templateUrl: './aa-msg-dialog.component.html',
-  styleUrls: ['./aa-msg-dialog.component.css']
+  selector: 'app-ni-msg-dialog',
+  templateUrl: './ni-msg-dialog.component.html',
+  styleUrls: ['./ni-msg-dialog.component.css']
 })
-export class AaMsgDialogComponent {
+export class NiMsgDialogComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<AaMsgDialogComponent>,
+    public dialogRef: MatDialogRef<NiMsgDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public flight: Flight) {}
 
   // tslint:disable-next-line:use-lifecycle-interface

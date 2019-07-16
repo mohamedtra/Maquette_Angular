@@ -2,16 +2,15 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Flight } from 'src/app/models/flight';
 
-
 @Component({
-  selector: 'app-aa-msg-dialog',
-  templateUrl: './aa-msg-dialog.component.html',
-  styleUrls: ['./aa-msg-dialog.component.css']
+  selector: 'app-ax-dx-msg-dialog',
+  templateUrl: './ax-dx-msg-dialog.component.html',
+  styleUrls: ['./ax-dx-msg-dialog.component.css']
 })
-export class AaMsgDialogComponent {
+export class AxDxMsgDialogComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<AaMsgDialogComponent>,
+    public dialogRef: MatDialogRef<AxDxMsgDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public flight: Flight) {}
 
   // tslint:disable-next-line:use-lifecycle-interface
@@ -21,5 +20,6 @@ export class AaMsgDialogComponent {
   onNoClick(): void {
     this.dialogRef.close();
   }
+
 
 }

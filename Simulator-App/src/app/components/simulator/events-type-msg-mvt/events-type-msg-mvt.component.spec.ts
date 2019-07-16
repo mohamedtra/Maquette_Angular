@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EventsTypeMsgComponent } from './events-type-msg.component';
+import { EventsTypeMsgMvtComponent } from './events-type-msg-mvt.component';
 
 describe('EventsTypeMsgComponent', () => {
-  let component: EventsTypeMsgComponent;
-  let fixture: ComponentFixture<EventsTypeMsgComponent>;
+  let component: EventsTypeMsgMvtComponent;
+  let fixture: ComponentFixture<EventsTypeMsgMvtComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EventsTypeMsgComponent ]
+      declarations: [ EventsTypeMsgMvtComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EventsTypeMsgComponent);
+    fixture = TestBed.createComponent(EventsTypeMsgMvtComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

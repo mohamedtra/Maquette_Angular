@@ -1,0 +1,22 @@
+.mat-list1 button {
+    width: 15%;
+    margin: 5%;
+
+
+}
+.mat-list2 button {
+    width: 15%;
+    margin: 5%;
+
+
+
+}
+.mat-raised-button {
+  font-weight: bold;
+  color:white;
+  background-color:#ed0000;
+  text-align: justify;
+}
+.mat-raised-button:hover{
+  background-color: #051039
+}
