@@ -1,5 +1,6 @@
 import { FlightLeg } from './flightleg';
 
+
 export class Flight {
   company: string;
   flightNumber: string;
