@@ -1,3 +1,5 @@
+import { FlightLeg } from './flightleg';
+
 export class Flight {
   company: string;
   flightNumber: string;
@@ -5,5 +7,5 @@ export class Flight {
   aircraftType: string;
   aircraftRegistration: string;
   flightIdentifierDate: string;
-  flightLegs: Array<flightLeg>;
+  flightLegs: Array<FlightLeg>;
 }
