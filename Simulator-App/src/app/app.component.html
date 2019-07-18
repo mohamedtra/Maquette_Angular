@@ -2,8 +2,8 @@
 <app-header></app-header>
 
 <mat-grid-list cols="3">
-  <mat-grid-tile [colspan]="1"><app-search-flight-info></app-search-flight-info></mat-grid-tile>
-  <mat-grid-tile [colspan]="2"><app-flight-info></app-flight-info></mat-grid-tile>
+  <mat-grid-tile [colspan]="1"><app-search-flight-info [flight]="flight"></app-search-flight-info></mat-grid-tile>
+  <mat-grid-tile [colspan]="2"><app-flight-info [flight]="flight"></app-flight-info></mat-grid-tile>
   <mat-grid-tile [colspan]="3"><mat-card class="event-msg"><app-events-msg [flight]="flight"></app-events-msg></mat-card></mat-grid-tile>
 </mat-grid-list>
 

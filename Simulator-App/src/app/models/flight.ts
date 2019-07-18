@@ -7,6 +7,6 @@ export class Flight {
   operationalSuffix: string;
   aircraftType: string;
   aircraftRegistration: string;
-  flightIdentifierDate: string;
+  flightIdentifierDate: Date;
   flightLegs: Array<FlightLeg>;
 }

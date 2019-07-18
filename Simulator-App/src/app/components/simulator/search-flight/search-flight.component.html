@@ -7,30 +7,39 @@
         <br>
     </mat-card-header>
     <br>
-    <div class="example-container">
+
+    <form #f="ngForm" name="formSearchFlight" novalidate>
+      <div class="example-container">
         <mat-form-field>
-           <input matInput placeholder="Company">
+           <input matInput placeholder="Company" type="text" name="company" #name="ngModel" id="company"
+           [(ngModel)]="flight.company" maxlength="3" required>
         </mat-form-field>
 
         <div class="enligne">
             <mat-form-field>
-                <input matInput placeholder="Flight number">
-             </mat-form-field>
+                <input matInput placeholder="Flight number" type="text" name="flightNumber" #name="ngModel" id="flightNumber"
+                [(ngModel)]="flight.flightNumber" maxlength="3" required>
+            </mat-form-field>
 
              <mat-form-field class="sp">
-                <input matInput placeholder="Operational suffix">
+                <input matInput placeholder="Operational suffix" type="text" name="operational-suffix" #name="ngModel" id="operational-suffix"
+                [(ngModel)]="flight.operationalSuffix" maxlength="2">
              </mat-form-field>
         </div>
 
         <mat-form-field>
-          <input matInput [matDatepicker]="picker" placeholder="Flight date">
+          <input matInput [matDatepicker]="picker" placeholder="Flight date" name="flightDate" #name="ngModel" id="flightDate"
+          [(ngModel)]="flight.flightIdentifierDate" maxlength="10" required>
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
 
-        <button mat-raised-button>Check Flight</button>
+        <button mat-raised-button type="submit">Check Flight</button>
 
       </div>
+    </form>
+
+
 
 </mat-card>
 
