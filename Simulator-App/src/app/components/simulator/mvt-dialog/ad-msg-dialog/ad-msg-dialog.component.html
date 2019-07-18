@@ -3,22 +3,17 @@
 <h1>AF019 - Actual Arrival</h1>
 <div>
 <mat-label>Current departure : {{flight.company}} </mat-label><br>
-<mat-label>Touchdown : {{flight.company}} </mat-label>
+
 </div>
 <div class="pop">
  <mat-form-field>
-   <input matInput placeholder=" Actual arrival(Format : hh:mm) <default: 0950>">
+   <input matInput placeholder=" Actual departure (Format : hh:mm) <default: 0950>">
  </mat-form-field>
 
  <mat-form-field>
-  <input matInput placeholder="Delay Code">
+  <input matInput placeholder="Actual pax on board <default: 0>">
  </mat-form-field>
-
- <mat-form-field>
-   <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-   <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-   <mat-datepicker touchUi #picker></mat-datepicker>
- </mat-form-field>
+ <mat-label>Estimated arrival (format : hh:mm) : {{flight.company}} </mat-label>
  <div mat-dialog-actions>
  <button mat-button [mat-dialog-close]="flight.company" cdkFocusInitial>Submit</button>
  </div>

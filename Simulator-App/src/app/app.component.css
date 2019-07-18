@@ -7,8 +7,7 @@ mat-grid-tile {
 app-search-flight-info {
   width: 90%;
   margin-left: 10%;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
 app-flight-info {
@@ -16,3 +15,9 @@ app-flight-info {
   margin-right: 5%;
 
 }
+.event-msg {
+  width: 91%;
+  height: 100%;
+
+}
+

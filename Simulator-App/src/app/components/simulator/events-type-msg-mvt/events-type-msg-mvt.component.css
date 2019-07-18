@@ -20,3 +20,30 @@
 .mat-raised-button:hover{
   background-color: #051039
 }
+
+mat-raised-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.disp {
+  display: flex;
+  flex-direction: column;
+}
+.line-right {
+  margin-right: 3px;
+}
+.line-left {
+  margin-left: 3px;
+}
+mat-card {
+  height: 80%;
+}
+
+button {
+  margin-bottom: 10px;
+}
+/* button:visited {
+  background-color: black;
+}
+ */

@@ -4,7 +4,8 @@
 <mat-grid-list cols="3">
   <mat-grid-tile [colspan]="1"><app-search-flight-info></app-search-flight-info></mat-grid-tile>
   <mat-grid-tile [colspan]="2"><app-flight-info></app-flight-info></mat-grid-tile>
+  <mat-grid-tile [colspan]="3"><mat-card class="event-msg"><app-events-msg></app-events-msg></mat-card></mat-grid-tile>
 </mat-grid-list>
-<app-events-msg></app-events-msg>
+
 <router-outlet></router-outlet>
 
