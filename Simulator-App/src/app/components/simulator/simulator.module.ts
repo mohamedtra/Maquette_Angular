@@ -15,6 +15,7 @@ import { EdMsgDialogComponent } from './mvt-dialog/ed-msg-dialog/ed-msg-dialog.c
 import { NiMsgDialogComponent } from './mvt-dialog/ni-msg-dialog/ni-msg-dialog.component';
 import { TouchdownMsgDialogComponent } from './mvt-dialog/touchdown-msg-dialog/touchdown-msg-dialog.component';
 import { EventsTypeMsgAsmComponent } from './events-type-msg-asm/events-type-msg-asm.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -36,7 +37,8 @@ import { EventsTypeMsgAsmComponent } from './events-type-msg-asm/events-type-msg
     EventsTypeMsgAsmComponent],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   exports: [SearchFlightComponent,
     EventsMsgComponent,

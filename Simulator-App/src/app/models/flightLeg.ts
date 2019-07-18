@@ -5,4 +5,5 @@ export class FlightLeg {
   depPkg: string;
   arrPkg: string;
   depTime: string;
+  arrTime: string;
 }
