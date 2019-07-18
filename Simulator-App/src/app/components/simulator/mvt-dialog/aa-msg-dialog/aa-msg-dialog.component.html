@@ -1,9 +1,8 @@
 
-<h1 mat-dialog-title> {{flight.company}}</h1>
-<h1>AF019 - Actual Arrival</h1>
+<h1 mat-dialog-title> {{data.flight.company}} - Actual Arrival</h1>
 <div>
-<mat-label>Current arrival : {{flight.company}} </mat-label><br>
-<mat-label>Touchdown : {{flight.company}} </mat-label>
+<mat-label>Current arrival : {{data.flight.company}} </mat-label><br>
+<mat-label>Touchdown : {{data.flight.company}} </mat-label>
 </div>
 <div class="pop">
  <mat-form-field>
@@ -20,6 +19,6 @@
    <mat-datepicker touchUi #picker></mat-datepicker>
  </mat-form-field>
  <div mat-dialog-actions>
- <button mat-button [mat-dialog-close]="flight.company" cdkFocusInitial>Submit</button>
+ <button mat-button [mat-dialog-close]="data.flight.company" cdkFocusInitial>Submit</button>
  </div>
 </div>

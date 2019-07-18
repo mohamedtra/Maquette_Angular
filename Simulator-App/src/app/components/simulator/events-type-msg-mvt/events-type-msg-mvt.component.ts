@@ -9,18 +9,21 @@ import { EdMsgDialogComponent } from '../mvt-dialog/ed-msg-dialog/ed-msg-dialog.
 import { TakeofMsgDialogComponent } from '../mvt-dialog/takeof-msg-dialog/takeof-msg-dialog.component';
 import { TouchdownMsgDialogComponent } from '../mvt-dialog/touchdown-msg-dialog/touchdown-msg-dialog.component';
 import { AxDxMsgDialogComponent } from '../mvt-dialog/ax-dx-msg-dialog/ax-dx-msg-dialog.component';
+import { BaseDestroyableComponent } from '../../common/base.component';
 
 @Component({
   selector: 'app-events-type-msg-mvt',
   templateUrl: './events-type-msg-mvt.component.html',
   styleUrls: ['./events-type-msg-mvt.component.css']
 })
-export class EventsTypeMsgMvtComponent   {
+export class EventsTypeMsgMvtComponent  {
   @Input() flight: Flight;
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+  }
   // Actual arrival dialog
   openAaDialog(): void {
-    console.log(this.flight.company);
+   /*  console.log(this.flight.company);
+    console.log(this.flight.flightNumber); */
     this.openDialog(AaMsgDialogComponent, '500px');
 }
   // Actual departure dialog

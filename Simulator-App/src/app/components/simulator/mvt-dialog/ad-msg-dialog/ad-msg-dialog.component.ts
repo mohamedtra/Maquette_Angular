@@ -11,7 +11,7 @@ export class AdMsgDialogComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<AdMsgDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public flight: Flight) {}
+    @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
