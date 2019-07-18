@@ -1,11 +1,12 @@
 .event-type {
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+  /* margin-left: 5%; */
   display: flex;
   flex-direction: column;
 }
 
 .typ-event:hover {
-  background-color: #051039;
+  background-color: #363636;
   color: white;
 }
+

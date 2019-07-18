@@ -1,13 +1,62 @@
-<mat-card class="mat-list1">
-  <button mat-raised-button (click)="openAaDialog()">AA : Actual Arrival</button>
-  <button mat-raised-button (click)="openAdDialog()">AD : Actual Depart</button>
-  <button mat-raised-button (click)="openAxDxDialog()">AX/DX : Actual Arrival</button>
-  <button mat-raised-button (click)="openToDialog()">TakeOf : Actual Depart</button> -->
-</mat-card>
 
-<mat-card class="mat-list2">
-  <button mat-raised-button (click)="openEaDialog()">EA : Estimated Arrival</button>
-  <button mat-raised-button (click)="openEdDialog()">ED : Estimated Departure</button>
-  <button mat-raised-button (click)="openNiDialog()">NI: next information</button>
-  <button mat-raised-button (click)="openTdDialog()">Touchdown</button> -->
-</mat-card>
+    <mat-grid-list cols="4" rowHeight="1:1">
+        <mat-grid-tile>
+          <mat-card>
+              <mat-card-title>Estimated information</mat-card-title>
+              <br>
+              <div class="disp">
+                  <button mat-raised-button (click)="openEdDialog()">EB : Estimated Arrival-Block</button>
+                  <button mat-raised-button (click)="openEdDialog()">ED : Estimated Departure-Block</button>
+                  <button mat-raised-button (click)="openTdDialog()">EA : Estimated Touchdown</button>
+                  <button mat-raised-button (click)="openToDialog()">EO : Estimated TakeOff</button>
+              </div>
+          </mat-card>
+
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+            <mat-card>
+                <mat-card-title>Actual information</mat-card-title>
+                <br>
+                <div class="disp">
+                    <button mat-raised-button (click)="openAaDialog()">AA : Actual Arrival-Block</button>
+                    <button mat-raised-button (click)="openEdDialog()">AD : Actual Departure-Block</button>
+                    <button mat-raised-button (click)="openTdDialog()">AA : Actual Touchdown</button>
+                    <button mat-raised-button (click)="openTdDialog()">AD : Actual TakeOff</button>
+                </div>
+            </mat-card>
+
+          </mat-grid-tile>
+          <mat-grid-tile>
+              <mat-card>
+                  <mat-card-title>Cancel operation</mat-card-title>
+                  <br>
+                  <div class="disp">
+                      <button mat-raised-button (click)="openEaDialog()">EX : Cancel ED</button>
+                      <button mat-raised-button (click)="openEdDialog()">AX : Cancel AA</button>
+                      <button mat-raised-button (click)="openTdDialog()">DX : Cancel AD</button>
+                      <div>
+                          <button class="line-right" mat-raised-button (click)="openTdDialog()">FX : Cancel FR </button>
+                          <button class="line-left" mat-raised-button (click)="openTdDialog()">RX : Cancel RR </button>
+                      </div>
+                  </div>
+              </mat-card>
+
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card>
+                    <mat-card-title>Other information</mat-card-title>
+                    <br>
+                    <div class="disp">
+                        <button mat-raised-button (click)="openEaDialog()">FR : Flight-Return</button>
+                        <button mat-raised-button (click)="openEdDialog()">RR : Rump-Return</button>
+                        <button mat-raised-button (click)="openTdDialog()">NI : Next information</button>
+                        <button mat-raised-button (click)="openTdDialog()">PX : Pax information</button>
+
+                    </div>
+                </mat-card>
+
+              </mat-grid-tile>
+    </mat-grid-list>
+
+
