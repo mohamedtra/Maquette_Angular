@@ -20,6 +20,7 @@ export class EventsTypeMsgMvtComponent   {
   constructor(public dialog: MatDialog) {}
   // Actual arrival dialog
   openAaDialog(): void {
+    console.log(this.flight.company);
     this.openDialog(AaMsgDialogComponent, '500px');
 }
   // Actual departure dialog
