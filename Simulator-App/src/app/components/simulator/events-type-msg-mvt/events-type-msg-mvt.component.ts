@@ -61,7 +61,6 @@ export class EventsTypeMsgMvtComponent  {
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.flight = result;
     });
   }
 
