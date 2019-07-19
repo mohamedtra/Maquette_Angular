@@ -1,13 +1,9 @@
 
 <h1 mat-dialog-title> {{data.flight.company}} - Actual Arrival</h1>
 <div>
-<mat-label><li  *ngFor="let flight of flightLeg; let nb = index"
-  class="list-group-item">
-<input type="checkbox" value="{{service.nom}}"/>
-{{service.nom}} --- {{service.etat}} {{nb}}
-<span>{{onClique()}}</span>
-</li></mat-label><br>
-<mat-label>Touchdown : {{data.flight.touchdown | date: 'medium'}} </mat-label>
+<mat-label> Current Actual : {{(data.flight.flightLegs[0].depTime)}} / {{(data.flight.flightLegs[0].depTimeType)}}
+</mat-label><br>
+<mat-label>Touchdown : {{data.flight.flightLegs[0].touchdown}} </mat-label>
 </div>
 <div class="pop">
  <mat-form-field>
