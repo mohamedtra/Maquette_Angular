@@ -15,7 +15,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.flight.company = 'AF';
     this.flight.flightNumber = '019';
-    this.flight.operationalSuffix = '';
+    this.flight.operationalSuffix = 'A';
+    this.flight.aircraftRegistration = 'FHBNR';
+    this.flight.aircraftType = '320';
     this.flight.flightIdentifierDate = new Date();
 
     this.flight.flightLegs = [];

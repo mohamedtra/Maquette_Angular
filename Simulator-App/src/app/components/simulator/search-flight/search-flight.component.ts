@@ -10,6 +10,11 @@ export class SearchFlightComponent implements OnInit {
 
   @Input() flight: Flight;
 
+  company: string;
+  flightNumber: string;
+  operationalSuffix: string;
+  flightDate: Date;
+
   constructor() { }
 
   ngOnInit() {
@@ -19,6 +24,9 @@ export class SearchFlightComponent implements OnInit {
     console.log(this.flight.company);
     console.log(this.flight.flightNumber);
     console.log(this.flight.operationalSuffix);
+  }
+
+  checkInformation() {
   }
 
 }
