@@ -23,7 +23,7 @@
 
              <mat-form-field class="sp">
                 <input matInput placeholder="Operational suffix" type="text" name="operationalSuffix" #name="ngModel" id="operational-suffix"
-                [(ngModel)]="operationalSuffix" maxlength="2">
+                [(ngModel)]="operationalSuffix" maxlength="1">
              </mat-form-field>
         </div>
 
@@ -34,7 +34,7 @@
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
 
-        <button mat-raised-button (click)="checkInformation(company.valueOf, flightNumber.valueOf, operationalSuffix.valueOf, flightDate.valueOf)" type="submit" [disabled]=!monForm.valid>Check Flight</button>
+        <button mat-raised-button (click)="checkInformation()" type="submit" [disabled]=!monForm.valid>Check Flight</button>
 
       </div>
     </form>

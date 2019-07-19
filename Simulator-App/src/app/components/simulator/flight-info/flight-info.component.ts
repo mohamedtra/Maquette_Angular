@@ -15,7 +15,7 @@ export class FlightInfoComponent extends BaseDestroyableComponent {
 
   @Input() flight: Flight;
 
-  displayedColumns: string[] = ['dep_esc', 'arr_esc', 'dep_time', 'arr_time', 'pkg_dep', 'pkg_arr'];
+  displayedColumns: string[] = ['dep_esc', 'arr_esc', 'dep_time', 'dep_time_type', 'arr_time', 'arr_time_type', 'pkg_dep', 'pkg_arr'];
   // tslint:disable-next-line: no-use-before-declare
   dataSource: MatTableDataSource<FlightLeg>;
 

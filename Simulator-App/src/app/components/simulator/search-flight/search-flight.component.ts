@@ -60,8 +60,10 @@ export class SearchFlightComponent extends BaseDestroyableComponent {
     fl2.depPkg = 'B20';
     fl2.depStation = 'CDG1';
     fl2.arrStation = 'MRS1';
-    fl2.depTime = '10:00 S';
-    fl2.arrTime = '11:45 S';
+    fl2.depTime = '10:00';
+    fl2.arrTime = '11:45';
+    fl2.depTimeType = 'S';
+    fl2.arrTimeType = 'E';
 
 
     this.flight.flightLegs.push(fl1);
