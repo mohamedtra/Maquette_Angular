@@ -26,7 +26,11 @@ export class SearchFlightComponent implements OnInit {
     console.log(this.flight.operationalSuffix);
   }
 
-  checkInformation() {
+  checkInformation(company: string, flightNumber: string, operationalSuffix: string, flightDate: Date ) {
+    this.company = company;
+    this.flightNumber = flightNumber;
+    this.operationalSuffix = operationalSuffix;
+    this.flightDate = flightDate;
   }
 
 }
