@@ -35,6 +35,7 @@ export class SearchFlightComponent implements OnInit {
     this.flight.aircraftType = '320';
     this.flight.flightIdentifierDate = this.flightDate;
 
+
     this.flight.flightLegs = [];
 
     const fl1: FlightLeg = new FlightLeg();
@@ -44,9 +45,12 @@ export class SearchFlightComponent implements OnInit {
     fl1.depPkg = 'H02';
     fl1.depStation = 'NCE1';
     fl1.arrStation = 'CDG1';
-    fl1.depTime = '07:00 S';
-    fl1.arrTime = '08:45 S';
-
+    fl1.depTime = '07:00';
+    fl1.arrTime = '08:45';
+    fl1.depTimeType = 'S';
+    fl1.arrTimeType = 'E';
+    fl1.takeOf = '08:00';
+    fl1.touchdown = '14:30';
     fl2.arrPkg = 'H16';
     fl2.depPkg = 'B20';
     fl2.depStation = 'CDG1';

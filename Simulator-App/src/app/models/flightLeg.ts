@@ -6,5 +6,8 @@ export class FlightLeg {
   arrPkg: string;
   depTime: string;
   arrTime: string;
-
+  touchdown: string;
+  takeOf: string;
+  depTimeType: string;
+  arrTimeType: string;
 }
