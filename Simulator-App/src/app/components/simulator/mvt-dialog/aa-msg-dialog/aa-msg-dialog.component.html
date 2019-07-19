@@ -1,12 +1,12 @@
 
 <h1 mat-dialog-title> {{data.flight.company}} - Actual Arrival</h1>
 <div>
-<mat-label>Current arrival : {{data.flight.company}} </mat-label><br>
-<mat-label>Touchdown : {{data.flight.company}} </mat-label>
+<mat-label>Current arrival : {{data.flight.currentArrival | date: 'medium'}} </mat-label><br>
+<mat-label>Touchdown : {{data.flight.touchdown | date: 'medium'}} </mat-label>
 </div>
 <div class="pop">
  <mat-form-field>
-   <input matInput placeholder=" Actual arrival(Format : hh:mm) <default: 0950>">
+   <input matInput placeholder=" Actual arrival (Format : hh:mm) <default: 0950>">
  </mat-form-field>
 
  <mat-form-field>

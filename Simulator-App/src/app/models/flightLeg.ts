@@ -6,4 +6,5 @@ export class FlightLeg {
   arrPkg: string;
   depTime: string;
   arrTime: string;
+
 }

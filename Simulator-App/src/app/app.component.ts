@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
     this.flight.aircraftRegistration = 'FHBNR';
     this.flight.aircraftType = '320';
     this.flight.flightIdentifierDate = new Date();
+    this.flight.currentArrival = new Date();
+    this.flight.touchdown = new Date();
 
     this.flight.flightLegs = [];
 

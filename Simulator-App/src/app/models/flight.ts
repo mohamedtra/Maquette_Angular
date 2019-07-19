@@ -9,4 +9,6 @@ export class Flight {
   aircraftRegistration: string;
   flightIdentifierDate: Date;
   flightLegs: Array<FlightLeg>;
+  currentArrival: Date;
+  touchdown: Date;
 }
