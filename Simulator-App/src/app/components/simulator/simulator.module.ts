@@ -16,6 +16,7 @@ import { NiMsgDialogComponent } from './mvt-dialog/ni-msg-dialog/ni-msg-dialog.c
 import { TouchdownMsgDialogComponent } from './mvt-dialog/touchdown-msg-dialog/touchdown-msg-dialog.component';
 import { EventsTypeMsgAsmComponent } from './events-type-msg-asm/events-type-msg-asm.component';
 import { FormsModule } from '@angular/forms';
+import { RefreshService } from './refresh.service';
 
 
 
@@ -39,6 +40,9 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
     FormsModule
+  ],
+  providers: [
+    RefreshService
   ],
   exports: [SearchFlightComponent,
     EventsMsgComponent,

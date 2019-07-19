@@ -2,13 +2,16 @@ import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { Flight } from 'src/app/models/flight';
 import { FlightLeg } from 'src/app/models/flightleg';
+import { BaseDestroyableComponent } from '../../common/base.component';
+import { RefreshService } from '../refresh.service';
+
 
 @Component({
   selector: 'app-flight-info',
   templateUrl: './flight-info.component.html',
   styleUrls: ['./flight-info.component.css']
 })
-export class FlightInfoComponent implements OnInit {
+export class FlightInfoComponent extends BaseDestroyableComponent {
 
   @Input() flight: Flight;
 
@@ -16,10 +19,15 @@ export class FlightInfoComponent implements OnInit {
   // tslint:disable-next-line: no-use-before-declare
   dataSource: MatTableDataSource<FlightLeg>;
 
-  constructor() { }
+  constructor(private refService: RefreshService) {
+    super();
+   }
 
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
-    this.dataSource = new MatTableDataSource<FlightLeg>(this.flight.flightLegs);
+
+    super.subscribe(this.refService.getFlightRetrieve(),
+    result => { this.dataSource = new MatTableDataSource<FlightLeg>(this.flight.flightLegs); });
   }
 
 }

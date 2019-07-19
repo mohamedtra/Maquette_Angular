@@ -1,13 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Flight } from 'src/app/models/flight';
 import { FlightLeg } from 'src/app/models/flightleg';
+import { BaseDestroyableComponent } from '../../common/base.component';
+import { RefreshService } from '../refresh.service';
 
 @Component({
   selector: 'app-search-flight-info',
   templateUrl: './search-flight.component.html',
   styleUrls: ['./search-flight.component.css']
 })
-export class SearchFlightComponent implements OnInit {
+export class SearchFlightComponent extends BaseDestroyableComponent {
 
   @Input() flight: Flight;
 
@@ -16,8 +18,11 @@ export class SearchFlightComponent implements OnInit {
   operationalSuffix: string;
   flightDate: Date;
 
-  constructor() { }
+  constructor(private refService: RefreshService) {
+    super();
+  }
 
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
   }
 
@@ -61,6 +66,9 @@ export class SearchFlightComponent implements OnInit {
 
     this.flight.flightLegs.push(fl1);
     this.flight.flightLegs.push(fl2);
+
+    this.refService.emit();
+
   }
 
 }
