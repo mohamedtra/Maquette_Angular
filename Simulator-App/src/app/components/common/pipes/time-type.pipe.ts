@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Flight } from 'src/app/models/flight';
 
 @Pipe({
   name: 'timeType'
@@ -17,8 +16,12 @@ export class TimeTypePipe implements PipeTransform {
       case 'E':
           newStr = 'Estimated';
           break;
-      case 'm':
+
+      case 'M':
           newStr = 'Modify';
+          break;
+      case 'A':
+          newStr = 'Actual';
           break;
       default:
         newStr = 'typeTime existe pas !';
