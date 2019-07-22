@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { Flight } from 'src/app/models/flight';
 import { FlightLeg } from 'src/app/models/flightleg';

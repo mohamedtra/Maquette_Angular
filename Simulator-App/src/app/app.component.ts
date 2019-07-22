@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Flight } from './models/flight';
-import { FlightLeg } from './models/flightleg';
 
 @Component({
   selector: 'app-root',

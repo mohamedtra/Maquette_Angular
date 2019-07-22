@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Flight } from 'src/app/models/flight';
 import { FlightLeg } from 'src/app/models/flightleg';
 import { BaseDestroyableComponent } from '../../common/base.component';
