@@ -1,8 +1,4 @@
-.example-card {
-  width: 100%;
-  height: 90%;
 
-}
 
 .example-header-image {
   background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/84/4c/dd/844cdda8-c8b1-e31e-6dba-da30e1c47e77/source/256x256bb.jpg');
@@ -15,10 +11,11 @@ table {
 
 mat-card-title {
   font-size: 5px;
+
 }
 
 .scrollable {
-  height: 220px;
+  height: 231px;
   overflow: scroll;
   width: 100%;
 }

@@ -2,7 +2,7 @@
     <app-header></app-header>
 </div>
 <div class="deuxieme">
-    <mat-grid-list cols="3">
+    <mat-grid-list cols="3" rowHeight="350px">
         <mat-grid-tile class="top" [colspan]="1"><app-search-flight-info [flight]="flight"></app-search-flight-info></mat-grid-tile>
         <mat-grid-tile class="top" [colspan]="2"><app-flight-info [flight]="flight"></app-flight-info></mat-grid-tile>
         <mat-grid-tile [colspan]="3"><mat-card class="event-msg"><app-events-msg [flight]="flight"></app-events-msg></mat-card></mat-grid-tile>
