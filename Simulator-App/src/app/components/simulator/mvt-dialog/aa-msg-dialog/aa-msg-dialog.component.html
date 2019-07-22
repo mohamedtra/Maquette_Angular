@@ -1,7 +1,7 @@
 
 <h1 mat-dialog-title> {{data.flight.company}} - Actual Arrival</h1>
 <div>
-<mat-label> Current Actual : {{(data.flight.flightLegs[0].depTime)}} / {{(data.flight.flightLegs[0].depTimeType)}}
+<mat-label> Current Actual : {{data.flight.flightLegs[0].depTime}} / {{data.flight.flightLegs[0].depTimeType | timeType}}
 </mat-label><br>
 <mat-label>Touchdown : {{data.flight.flightLegs[0].touchdown}} </mat-label>
 </div>

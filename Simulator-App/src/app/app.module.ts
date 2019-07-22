@@ -26,7 +26,7 @@ import { EdMsgDialogComponent } from './components/simulator/mvt-dialog/ed-msg-d
     AppRoutingModule,
     BrowserAnimationsModule,
     SimulatorModule,
-    MaterialModule
+    MaterialModule,
   ],
   entryComponents: [AaMsgDialogComponent, AdMsgDialogComponent, EaMsgDialogComponent, NiMsgDialogComponent, TakeofMsgDialogComponent,
     TouchdownMsgDialogComponent, AxDxMsgDialogComponent, EdMsgDialogComponent],

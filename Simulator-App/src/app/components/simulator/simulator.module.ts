@@ -17,6 +17,7 @@ import { TouchdownMsgDialogComponent } from './mvt-dialog/touchdown-msg-dialog/t
 import { EventsTypeMsgAsmComponent } from './events-type-msg-asm/events-type-msg-asm.component';
 import { FormsModule } from '@angular/forms';
 import { RefreshService } from './refresh.service';
+import { PipesModule } from '../common/pipes/pipes.module';
 
 
 
@@ -39,7 +40,8 @@ import { RefreshService } from './refresh.service';
   imports: [
     CommonModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    PipesModule
   ],
   providers: [
     RefreshService
