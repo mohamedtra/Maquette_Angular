@@ -18,9 +18,15 @@ mat-card-title {
   height: 231px;
   overflow: scroll;
   width: 100%;
+
 }
 
 mat-card-subtitle {
   color: #ed0000;
 }
 
+.example-card {
+  width: 99%;
+  padding-top: 0%;
+
+}
