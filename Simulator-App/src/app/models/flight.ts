@@ -2,7 +2,7 @@ import { FlightLeg } from './flightleg';
 
 
 export class Flight {
-  company: string;
+  airlineCode: string;
   flightNumber: string;
   operationalSuffix: string;
   aircraftType: string;
@@ -10,5 +10,4 @@ export class Flight {
   flightIdentifierDate: Date;
   flightLegs: Array<FlightLeg>;
   currentArrival: Date;
-  touchdown: Date;
 }

@@ -27,13 +27,13 @@ export class SearchFlightComponent extends BaseDestroyableComponent {
   }
 
   defaultDisplay(): void {
-    console.log(this.flight.company);
+    console.log(this.flight.airlineCode);
     console.log(this.flight.flightNumber);
     console.log(this.flight.operationalSuffix);
   }
 
   checkInformation() {
-    this.flight.company = this.company;
+    this.flight.airlineCode = this.company;
     this.flight.flightNumber = this.flightNumber;
     this.flight.operationalSuffix = this.operationalSuffix;
     this.flight.aircraftRegistration = 'FHBNR';
@@ -48,22 +48,22 @@ export class SearchFlightComponent extends BaseDestroyableComponent {
 
     fl1.arrPkg = 'B20';
     fl1.depPkg = 'H02';
-    fl1.depStation = 'NCE1';
-    fl1.arrStation = 'CDG1';
-    fl1.depTime = '07:00';
-    fl1.arrTime = '08:45';
-    fl1.depTimeType = 'S';
-    fl1.arrTimeType = 'E';
-    fl1.takeOf = '08:00';
-    fl1.touchdown = '14:30';
+    fl1.departureStation = 'NCE1';
+    fl1.arrivalStation = 'CDG1';
+    fl1.lastKnownDepartureDateTime = '07:00';
+    fl1.lastKnownArrivalDateTime = '08:45';
+    fl1.lastKnownDepartureTimeType = 'S';
+    fl1.lastKnownArrivalTimeType = 'E';
+    fl1.actualTakeOfDepartureDateTime = '08:00';
+    fl1.actualTouchDownDateTime = '14:30';
     fl2.arrPkg = 'H16';
     fl2.depPkg = 'B20';
-    fl2.depStation = 'CDG1';
-    fl2.arrStation = 'MRS1';
-    fl2.depTime = '10:00';
-    fl2.arrTime = '11:45';
-    fl2.depTimeType = 'S';
-    fl2.arrTimeType = 'E';
+    fl2.departureStation = 'CDG1';
+    fl2.arrivalStation = 'MRS1';
+    fl2.lastKnownDepartureDateTime = '10:00';
+    fl2.lastKnownArrivalDateTime = '11:45';
+    fl2.lastKnownDepartureTimeType = 'S';
+    fl2.lastKnownArrivalTimeType = 'E';
 
 
     this.flight.flightLegs.push(fl1);

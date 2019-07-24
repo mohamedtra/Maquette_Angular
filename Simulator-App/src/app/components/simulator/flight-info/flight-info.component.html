@@ -3,7 +3,7 @@
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Flight information</mat-card-title>
     <br>
-    <mat-card-subtitle>{{flight.company}} {{flight.flightNumber}} {{flight.operationalSuffix}} {{flight.flightIdentifierDate | date: 'medium'}} {{flight.aircraftRegistration}} {{flight.aircraftType}} </mat-card-subtitle>
+    <mat-card-subtitle>{{flight.airlineCode}} {{flight.flightNumber}} {{flight.operationalSuffix}} {{flight.flightIdentifierDate | date: 'medium'}} {{flight.aircraftRegistration}} {{flight.aircraftType}} </mat-card-subtitle>
   </mat-card-header>
   <br>
 
@@ -13,32 +13,32 @@
 
         <ng-container matColumnDef="dep_esc">
           <th mat-header-cell *matHeaderCellDef> Departure station </th>
-          <td mat-cell *matCellDef="let element"> {{element.depStation}} </td>
+          <td mat-cell *matCellDef="let element"> {{element.departureStation}} </td>
         </ng-container>
 
         <ng-container matColumnDef="arr_esc">
             <th mat-header-cell *matHeaderCellDef> Arrival station </th>
-            <td mat-cell *matCellDef="let element"> {{element.arrStation}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.arrivalStation}} </td>
         </ng-container>
 
         <ng-container matColumnDef="dep_time">
             <th mat-header-cell *matHeaderCellDef> Departure time </th>
-            <td mat-cell *matCellDef="let element"> {{element.depTime}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.lastKnownDepartureDateTime}} </td>
         </ng-container>
 
         <ng-container matColumnDef="dep_time_type">
             <th mat-header-cell *matHeaderCellDef> dep. time type </th>
-            <td mat-cell *matCellDef="let element"> {{element.depTimeType}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.lastKnownDepartureTimeType | timeType}} </td>
         </ng-container>
 
         <ng-container matColumnDef="arr_time">
            <th mat-header-cell *matHeaderCellDef> Arrival time </th>
-           <td mat-cell *matCellDef="let element"> {{element.arrTime}} </td>
+           <td mat-cell *matCellDef="let element"> {{element.lastKnownArrivalDateTime}} </td>
         </ng-container>
 
         <ng-container matColumnDef="arr_time_type">
             <th mat-header-cell *matHeaderCellDef> arr. time type </th>
-            <td mat-cell *matCellDef="let element"> {{element.arrTimeType}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.lastKnownArrivalTimeType | timeType}} </td>
         </ng-container>
 
         <ng-container matColumnDef="pkg_dep">

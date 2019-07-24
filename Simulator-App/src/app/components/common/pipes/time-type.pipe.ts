@@ -11,7 +11,7 @@ export class TimeTypePipe implements PipeTransform {
     let result = ' ';
     switch (value) {
       case 'S':
-        newStr = 'Schedule';
+        newStr = 'Scheduled';
         break;
       case 'E':
           newStr = 'Estimated';
@@ -24,7 +24,7 @@ export class TimeTypePipe implements PipeTransform {
           newStr = 'Actual';
           break;
       default:
-        newStr = 'typeTime existe pas !';
+        newStr = 'typeTime not applicable for this item';
     }
     return result = '< ' + newStr + ' >';
 
